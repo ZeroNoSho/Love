@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { Canvas, useThree } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import "./App.css";
 import Flower from "./components/Flower/Model.js";
