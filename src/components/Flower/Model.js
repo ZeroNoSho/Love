@@ -46,7 +46,7 @@ export default function Model(props) {
           </group>
         </Center>
       </Center>
-      <Center position={[3.5, 5, -7]}>
+      {/* <Center position={[3.5, 5, -7]}>
         <AnimatedSphere></AnimatedSphere>
       </Center>
       <Center position={[-3.5, -5, -7]}>
@@ -66,7 +66,7 @@ export default function Model(props) {
       </Center>
       <Center position={[5.5, -0.5, -4]}>
         <Jar></Jar>
-      </Center>
+      </Center> */}
     </PerspectiveCamera>
   );
 }
