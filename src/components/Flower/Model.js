@@ -14,7 +14,7 @@ import Love from "../Love/ModelDraco.js";
 import Jar from "../Jar/Model2Draco.js";
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF("/model.gltf");
+  const { nodes, materials } = useGLTF("/Model.gltf");
   const ref = useRef();
 
   useFrame((state, delta) => (ref.current.rotation.y += 0.001));
@@ -71,4 +71,4 @@ export default function Model(props) {
   );
 }
 
-useGLTF.preload("/model.gltf");
+useGLTF.preload("/Model.gltf");
