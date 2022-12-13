@@ -2,8 +2,7 @@ import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import "./App.css";
-import Flower from "./components/Flower/Model.js";
-import AnimatedSphere from "./components/AnimatedSphere";
+import Flower from "./components/Flower/Model.js"; 
 
 export default function App() {
   return (
