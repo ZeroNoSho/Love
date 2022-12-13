@@ -19,7 +19,7 @@ export default function Model(props) {
 
   useFrame((state, delta) => (ref.current.rotation.y += 0.001));
   return (
-    <PerspectiveCamera position={[0, 0, -1]} dispose={null}>
+    <PerspectiveCamera position={[0, 0, -1]}>
       <Center>
         <Text3D position={[0.95, 0, 0]} curveSegments={20} height={0.5} lineHeight={0.5} letterSpacing={-0.06} size={0.5} font="/Inter_Bold.json">
           {`Xena`}
@@ -46,7 +46,7 @@ export default function Model(props) {
           </group>
         </Center>
       </Center>
-      {/* <Center position={[3.5, 5, -7]}>
+      <Center position={[3.5, 5, -7]}>
         <AnimatedSphere></AnimatedSphere>
       </Center>
       <Center position={[-3.5, -5, -7]}>
@@ -66,7 +66,7 @@ export default function Model(props) {
       </Center>
       <Center position={[5.5, -0.5, -4]}>
         <Jar></Jar>
-      </Center> */}
+      </Center>
     </PerspectiveCamera>
   );
 }
