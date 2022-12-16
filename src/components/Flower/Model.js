@@ -8,13 +8,12 @@ import Jar from "../Jar/Model2Draco.js";
 export default function Model(props) {
   const { nodes, materials } = useGLTF("/Model.gltf");
   const ref = useRef();
-
   useFrame((state, delta) => (ref.current.rotation.y += 0.001));
   return (
     <PerspectiveCamera position={[0, 0, -1]}>
       <Center>
         <Text3D position={[0.95, 0, 0]} curveSegments={20} height={0.5} lineHeight={0.5} letterSpacing={-0.06} size={0.5} font="/Inter_Bold.json">
-          {`Xena`}
+          {window.location.pathname === "/" ? `Xena` : window.location.pathname.split("/")}
           <meshStandardMaterial color={"#ffd1b0"}></meshStandardMaterial>
         </Text3D>
         <Center top left position={[3.25, -2.5, 0]}>
