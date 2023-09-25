@@ -12,7 +12,7 @@ export default function Model(props) {
   return (
     <PerspectiveCamera position={[0, 0, -1]}>
       <Center>
-        <Text3D position={[0.95, 0, 0]} curveSegments={20} height={0.5} lineHeight={0.5} letterSpacing={-0.06} size={0.5} font="/Inter_Bold.json">
+        <Text3D position={window.location.pathname === "/" ? [-1.5, 0, 0] : [0.95, 0, 0]} curveSegments={20} height={0.5} lineHeight={0.5} letterSpacing={-0.06} size={0.5} font="/Inter_Bold.json">
           {window.location.pathname === "/" ? ` Jessica Maylaffazyza` : window.location.pathname.split("/")}
           <meshStandardMaterial color={"#ffd1b0"}></meshStandardMaterial>
         </Text3D>
